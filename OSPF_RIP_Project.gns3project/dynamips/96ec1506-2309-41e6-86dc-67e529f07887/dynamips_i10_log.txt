@@ -1,0 +1,51 @@
+Sep 20 00:37:27.092 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 20 00:37:27.093 HYPERVISOR: Started on IP = localhost, TCP port = 7614.
+Sep 20 00:37:27.569 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 20 00:37:27.570 HYPERVISOR: exec_cmd: hypervisor working_dir D:\NTI\CCNP Enterprise (ENCOR)\Assignment\Second Week\Practical Assignment 1\project-files\dynamips 
+Sep 20 00:37:27.570 GENERAL: working_dir=D:\NTI\CCNP Enterprise (ENCOR)\Assignment\Second Week\Practical Assignment 1\project-files\dynamips
+Sep 20 00:37:27.570 HYPERVISOR: exec_cmd: hypervisor working_dir D:\NTI\CCNP Enterprise (ENCOR)\Assignment\Second Week\Practical Assignment 1\project-files\dynamips\008b114f-1bbb-4fe4-97f1-d5686f517e42 
+Sep 20 00:37:27.571 GENERAL: working_dir=D:\NTI\CCNP Enterprise (ENCOR)\Assignment\Second Week\Practical Assignment 1\project-files\dynamips\008b114f-1bbb-4fe4-97f1-d5686f517e42
+Sep 20 00:37:27.571 HYPERVISOR: exec_cmd: vm create R9 9 c3745 
+Sep 20 00:37:27.576 VM: VM R9 created.
+Sep 20 00:37:27.577 HYPERVISOR: exec_cmd: vm set_con_tcp_port R9 5009 
+Sep 20 00:37:27.577 HYPERVISOR: exec_cmd: c3745 get_mac_addr R9 
+Sep 20 00:37:27.578 HYPERVISOR: exec_cmd: vm set_disk0 R9 0 
+Sep 20 00:37:27.579 HYPERVISOR: exec_cmd: vm set_exec_area R9 64 
+Sep 20 00:37:27.580 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 20 00:37:27.581 HYPERVISOR: exec_cmd: vm set_idle_pc R9 0x6024b540 
+Sep 20 00:37:27.582 HYPERVISOR: exec_cmd: vm set_ios R9 C:/Users/AL-ZENY/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Sep 20 00:37:27.584 HYPERVISOR: exec_cmd: c3745 set_mac_addr R9 c409.339c.0000 
+Sep 20 00:37:27.584 HYPERVISOR: exec_cmd: vm set_nvram R9 256 
+Sep 20 00:37:27.586 HYPERVISOR: exec_cmd: vm set_ram R9 256 
+Sep 20 00:37:27.587 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 20 00:37:27.587 HYPERVISOR: exec_cmd: vm slot_add_binding R9 1 0 NM-4T 
+Sep 20 00:37:27.587 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 20 00:37:27.588 HYPERVISOR: exec_cmd: vm slot_add_binding R9 2 0 NM-1FE-TX 
+Sep 20 00:37:34.672 HYPERVISOR: exec_cmd: nio create_udp udp-d8824de4-b6c2-4a89-82ab-1f5079a2eb08 10038 127.0.0.1 10039 
+Sep 20 00:37:35.665 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 1 1 udp-d8824de4-b6c2-4a89-82ab-1f5079a2eb08 
+Sep 20 00:37:35.666 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 20 00:37:35.776 HYPERVISOR: exec_cmd: nio create_udp udp-f99c4e36-564b-469a-a376-a0c28bc366d5 10042 127.0.0.1 10043 
+Sep 20 00:37:35.781 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 1 0 udp-f99c4e36-564b-469a-a376-a0c28bc366d5 
+Sep 20 00:37:35.783 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 20 00:37:52.020 HYPERVISOR: exec_cmd: vm set_ghost_status R9 2 
+Sep 20 00:37:52.021 HYPERVISOR: exec_cmd: vm set_ghost_file R9 D:\NTI\CCNP Enterprise (ENCOR)\Assignment\Second Week\Practical Assignment 1\project-files\dynamips\c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
+Sep 20 00:37:52.023 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 20 00:37:52.037 HYPERVISOR: exec_cmd: vm set_config R9 configs\i9_startup-config.cfg 
+Sep 20 00:37:52.037 HYPERVISOR: exec_cmd: vm start R9 
+Sep 20 00:38:22.594 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 20 00:38:22.617 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 20 02:43:55.705 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 20 02:43:55.725 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 20 03:01:52.063 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 20 03:01:52.063 HYPERVISOR: exec_cmd: vm stop R9 
+Sep 20 03:01:52.244 VM: VM R9 shutdown.
+Sep 20 03:01:52.245 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 20 03:02:00.221 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 20 03:02:00.223 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 20 03:02:00.599 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 20 03:02:00.611 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 20 03:02:00.617 HYPERVISOR: exec_cmd: vm delete R9 
+Sep 20 03:02:00.617 VM: VM R9 destroyed.
+Sep 20 03:02:00.623 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 20 03:02:01.051 HYPERVISOR: Stopped.
+Sep 20 03:02:01.051 GENERAL: reset done.

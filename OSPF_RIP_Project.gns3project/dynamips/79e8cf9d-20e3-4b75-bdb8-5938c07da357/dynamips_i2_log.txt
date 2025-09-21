@@ -1,0 +1,51 @@
+Sep 20 12:06:20.967 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 20 12:06:20.968 HYPERVISOR: Started on IP = localhost, TCP port = 3442.
+Sep 20 12:06:21.454 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 20 12:06:21.456 HYPERVISOR: exec_cmd: hypervisor working_dir D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips 
+Sep 20 12:06:21.456 GENERAL: working_dir=D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips
+Sep 20 12:06:21.457 HYPERVISOR: exec_cmd: hypervisor working_dir D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\3ace3e35-756f-440e-92d7-c8d60b2ce192 
+Sep 20 12:06:21.457 GENERAL: working_dir=D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\3ace3e35-756f-440e-92d7-c8d60b2ce192
+Sep 20 12:06:21.459 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Sep 20 12:06:21.461 VM: VM R2 created.
+Sep 20 12:06:21.462 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Sep 20 12:06:21.462 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Sep 20 12:06:21.463 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Sep 20 12:06:21.463 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Sep 20 12:06:21.464 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 20 12:06:21.465 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x6024b540 
+Sep 20 12:06:21.466 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/tiger/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Sep 20 12:06:21.467 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c402.2134.0000 
+Sep 20 12:06:21.468 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Sep 20 12:06:21.469 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Sep 20 12:06:21.469 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 20 12:06:21.470 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-4T 
+Sep 20 12:06:21.470 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 20 12:06:21.471 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 NM-1FE-TX 
+Sep 20 12:06:28.077 HYPERVISOR: exec_cmd: nio create_udp udp-36b50a4c-0359-457f-8bb1-c9a841267474 15006 127.0.0.1 15007 
+Sep 20 12:06:28.361 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-36b50a4c-0359-457f-8bb1-c9a841267474 
+Sep 20 12:06:28.361 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 20 12:06:28.961 HYPERVISOR: exec_cmd: nio create_udp udp-aa2f9fce-a54d-4a5c-be4b-d6ec5bda8689 15014 127.0.0.1 15015 
+Sep 20 12:06:28.964 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 1 udp-aa2f9fce-a54d-4a5c-be4b-d6ec5bda8689 
+Sep 20 12:06:28.965 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 20 12:06:54.486 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Sep 20 12:06:54.489 VM: VM Ghost created.
+Sep 20 12:06:54.490 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/tiger/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Sep 20 12:06:54.491 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 20 12:06:54.492 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
+Sep 20 12:06:54.493 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Sep 20 12:06:54.493 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 20 12:06:54.494 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Sep 20 12:06:54.495 HYPERVISOR: exec_cmd: vm start Ghost 
+Sep 20 12:06:55.180 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 20 12:06:55.181 HYPERVISOR: exec_cmd: vm stop Ghost 
+Sep 20 12:06:55.402 VM: VM Ghost shutdown.
+Sep 20 12:06:55.404 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Sep 20 12:06:55.407 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Sep 20 12:06:55.407 VM: VM Ghost destroyed.
+Sep 20 12:06:55.443 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Sep 20 12:06:55.444 HYPERVISOR: exec_cmd: vm set_ghost_file R2 D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
+Sep 20 12:06:55.447 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 20 12:06:55.456 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg 
+Sep 20 12:06:55.457 HYPERVISOR: exec_cmd: vm start R2 
+Sep 20 12:07:26.269 HYPERVISOR: exec_cmd: vm extract_config R2 
+Sep 20 12:07:26.295 HYPERVISOR: exec_cmd: vm extract_config R2 

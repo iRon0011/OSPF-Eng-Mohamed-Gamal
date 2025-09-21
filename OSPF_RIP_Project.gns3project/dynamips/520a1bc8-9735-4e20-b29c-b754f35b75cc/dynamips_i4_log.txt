@@ -1,0 +1,36 @@
+Sep 20 12:06:22.175 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 20 12:06:22.176 HYPERVISOR: Started on IP = localhost, TCP port = 3449.
+Sep 20 12:06:22.658 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 20 12:06:22.660 HYPERVISOR: exec_cmd: hypervisor working_dir D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips 
+Sep 20 12:06:22.660 GENERAL: working_dir=D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips
+Sep 20 12:06:22.660 HYPERVISOR: exec_cmd: hypervisor working_dir D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\87f255a4-3402-4e9a-8843-fad2e3639544 
+Sep 20 12:06:22.661 GENERAL: working_dir=D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\87f255a4-3402-4e9a-8843-fad2e3639544
+Sep 20 12:06:22.662 HYPERVISOR: exec_cmd: vm create R4 4 c3745 
+Sep 20 12:06:22.664 VM: VM R4 created.
+Sep 20 12:06:22.666 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Sep 20 12:06:22.666 HYPERVISOR: exec_cmd: c3745 get_mac_addr R4 
+Sep 20 12:06:22.667 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Sep 20 12:06:22.668 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Sep 20 12:06:22.670 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 20 12:06:22.670 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x6024b540 
+Sep 20 12:06:22.672 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/tiger/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Sep 20 12:06:22.673 HYPERVISOR: exec_cmd: c3745 set_mac_addr R4 c404.0ae8.0000 
+Sep 20 12:06:22.674 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Sep 20 12:06:22.674 HYPERVISOR: exec_cmd: vm set_ram R4 256 
+Sep 20 12:06:22.675 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 20 12:06:22.676 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-4T 
+Sep 20 12:06:22.676 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 20 12:06:22.677 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 NM-1FE-TX 
+Sep 20 12:06:28.976 HYPERVISOR: exec_cmd: nio create_udp udp-12e80fbd-49d8-48d3-a973-98f81c8c8c57 15016 127.0.0.1 15017 
+Sep 20 12:06:29.275 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 1 udp-12e80fbd-49d8-48d3-a973-98f81c8c8c57 
+Sep 20 12:06:29.276 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 20 12:06:32.301 HYPERVISOR: exec_cmd: nio create_udp udp-c08327a6-bd8c-4439-abfe-cd489e75d6b1 15050 127.0.0.1 15051 
+Sep 20 12:06:32.305 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-c08327a6-bd8c-4439-abfe-cd489e75d6b1 
+Sep 20 12:06:32.306 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 20 12:06:56.166 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Sep 20 12:06:56.168 HYPERVISOR: exec_cmd: vm set_ghost_file R4 D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
+Sep 20 12:06:56.169 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 20 12:06:56.234 HYPERVISOR: exec_cmd: vm set_config R4 configs\i4_startup-config.cfg 
+Sep 20 12:06:56.243 HYPERVISOR: exec_cmd: vm start R4 
+Sep 20 12:07:27.526 HYPERVISOR: exec_cmd: vm extract_config R4 
+Sep 20 12:07:27.550 HYPERVISOR: exec_cmd: vm extract_config R4 

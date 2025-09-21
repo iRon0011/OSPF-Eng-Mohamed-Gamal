@@ -1,0 +1,33 @@
+Sep 20 12:06:22.776 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 20 12:06:22.777 HYPERVISOR: Started on IP = localhost, TCP port = 3452.
+Sep 20 12:06:23.268 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 20 12:06:23.269 HYPERVISOR: exec_cmd: hypervisor working_dir D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips 
+Sep 20 12:06:23.269 GENERAL: working_dir=D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips
+Sep 20 12:06:23.270 HYPERVISOR: exec_cmd: hypervisor working_dir D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\cf332f34-8d6b-47d8-bcaf-c680c03c2fe3 
+Sep 20 12:06:23.270 GENERAL: working_dir=D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\cf332f34-8d6b-47d8-bcaf-c680c03c2fe3
+Sep 20 12:06:23.271 HYPERVISOR: exec_cmd: vm create R5 5 c3745 
+Sep 20 12:06:23.272 VM: VM R5 created.
+Sep 20 12:06:23.273 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Sep 20 12:06:23.274 HYPERVISOR: exec_cmd: c3745 get_mac_addr R5 
+Sep 20 12:06:23.274 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Sep 20 12:06:23.275 HYPERVISOR: exec_cmd: vm set_exec_area R5 64 
+Sep 20 12:06:23.276 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 20 12:06:23.276 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x6024b540 
+Sep 20 12:06:23.277 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/tiger/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Sep 20 12:06:23.278 HYPERVISOR: exec_cmd: c3745 set_mac_addr R5 c405.047c.0000 
+Sep 20 12:06:23.279 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Sep 20 12:06:23.280 HYPERVISOR: exec_cmd: vm set_ram R5 256 
+Sep 20 12:06:23.280 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 20 12:06:23.281 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-4T 
+Sep 20 12:06:23.282 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 20 12:06:23.282 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 NM-1FE-TX 
+Sep 20 12:06:29.448 HYPERVISOR: exec_cmd: nio create_udp udp-84742ec2-f4d0-4d74-b338-4a12f7394333 15022 127.0.0.1 15023 
+Sep 20 12:06:29.757 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 1 udp-84742ec2-f4d0-4d74-b338-4a12f7394333 
+Sep 20 12:06:29.758 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 20 12:06:56.265 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Sep 20 12:06:56.267 HYPERVISOR: exec_cmd: vm set_ghost_file R5 D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
+Sep 20 12:06:56.269 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 20 12:06:56.278 HYPERVISOR: exec_cmd: vm set_config R5 configs\i5_startup-config.cfg 
+Sep 20 12:06:56.278 HYPERVISOR: exec_cmd: vm start R5 
+Sep 20 12:07:27.482 HYPERVISOR: exec_cmd: vm extract_config R5 
+Sep 20 12:07:27.508 HYPERVISOR: exec_cmd: vm extract_config R5 

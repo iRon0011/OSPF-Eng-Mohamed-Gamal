@@ -1,0 +1,33 @@
+Sep 20 12:06:23.378 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 20 12:06:23.379 HYPERVISOR: Started on IP = localhost, TCP port = 3455.
+Sep 20 12:06:23.875 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 20 12:06:23.877 HYPERVISOR: exec_cmd: hypervisor working_dir D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips 
+Sep 20 12:06:23.877 GENERAL: working_dir=D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips
+Sep 20 12:06:23.878 HYPERVISOR: exec_cmd: hypervisor working_dir D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\be399b5b-bfa1-4d97-826d-3b61ce03ef6f 
+Sep 20 12:06:23.878 GENERAL: working_dir=D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\be399b5b-bfa1-4d97-826d-3b61ce03ef6f
+Sep 20 12:06:23.879 HYPERVISOR: exec_cmd: vm create R6 6 c3745 
+Sep 20 12:06:23.881 VM: VM R6 created.
+Sep 20 12:06:23.882 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 5005 
+Sep 20 12:06:23.883 HYPERVISOR: exec_cmd: c3745 get_mac_addr R6 
+Sep 20 12:06:23.884 HYPERVISOR: exec_cmd: vm set_disk0 R6 0 
+Sep 20 12:06:23.886 HYPERVISOR: exec_cmd: vm set_exec_area R6 64 
+Sep 20 12:06:23.887 HYPERVISOR: exec_cmd: vm get_status R6 
+Sep 20 12:06:23.887 HYPERVISOR: exec_cmd: vm set_idle_pc R6 0x6024b540 
+Sep 20 12:06:23.889 HYPERVISOR: exec_cmd: vm set_ios R6 C:/Users/tiger/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Sep 20 12:06:23.890 HYPERVISOR: exec_cmd: c3745 set_mac_addr R6 c406.0530.0000 
+Sep 20 12:06:23.891 HYPERVISOR: exec_cmd: vm set_nvram R6 256 
+Sep 20 12:06:23.891 HYPERVISOR: exec_cmd: vm set_ram R6 256 
+Sep 20 12:06:23.892 HYPERVISOR: exec_cmd: vm get_status R6 
+Sep 20 12:06:23.892 HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 NM-4T 
+Sep 20 12:06:23.893 HYPERVISOR: exec_cmd: vm get_status R6 
+Sep 20 12:06:23.893 HYPERVISOR: exec_cmd: vm slot_add_binding R6 2 0 NM-1FE-TX 
+Sep 20 12:06:29.932 HYPERVISOR: exec_cmd: nio create_udp udp-c05b980c-199f-40e1-b5be-9090c16db637 15028 127.0.0.1 15029 
+Sep 20 12:06:30.237 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 1 1 udp-c05b980c-199f-40e1-b5be-9090c16db637 
+Sep 20 12:06:30.238 HYPERVISOR: exec_cmd: vm get_status R6 
+Sep 20 12:06:56.315 HYPERVISOR: exec_cmd: vm set_ghost_status R6 2 
+Sep 20 12:06:56.316 HYPERVISOR: exec_cmd: vm set_ghost_file R6 D:\NTI HRE READY\CCNP\assignments\Assignment 1\project-files\dynamips\c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
+Sep 20 12:06:56.317 HYPERVISOR: exec_cmd: vm get_status R6 
+Sep 20 12:06:56.325 HYPERVISOR: exec_cmd: vm set_config R6 configs\i6_startup-config.cfg 
+Sep 20 12:06:56.325 HYPERVISOR: exec_cmd: vm start R6 
+Sep 20 12:07:27.376 HYPERVISOR: exec_cmd: vm extract_config R6 
+Sep 20 12:07:27.401 HYPERVISOR: exec_cmd: vm extract_config R6 

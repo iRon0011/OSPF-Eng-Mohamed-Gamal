@@ -1,22 +1,39 @@
-# GNS3 Networking Project - Mohamed Gamal Shahda
+# OSPF & RIP Redistribution Lab (GNS3)
 
-## 📌 Project Overview
-This project was built using **GNS3** as part of my CCNP assignments.  
-It demonstrates advanced routing configurations and redistribution between different protocols.
+This project is a complete GNS3 topology for practicing **OSPF** (multi-area), **RIP**, and **Redistribution**, including advanced OSPF concepts such as **Totally Stub Area** and **NSSA**, with an **ISP router** that provides Internet access simulation.
 
-## 🚀 Key Features
-- OSPF multi-area configuration  
-- RIP routing  
-- Route redistribution between OSPF and RIP  
-- Totally Stub and NSSA areas in OSPF  
-- ISP connection to allow routers access to the Internet  
+---
 
-## 🗂️ Project Files
-- `OSPF_Project.gns3` → Main project file  
-- `OSPF_Project.gns3project/` → Project folder (configs, snapshots, etc.)  
+## 📖 Features
+- OSPF multi-area configuration (Backbone + multiple areas).
+- Redistribution between **RIP** and **OSPF**.
+- OSPF **Totally Stub Area** implementation.
+- OSPF **NSSA (Not-So-Stubby Area)** configuration.
+- ISP Router simulating Internet connectivity (0.0.0.0/0).
+- Loopback interfaces used to simulate multiple networks.
+- Full end-to-end connectivity test with `ping` between routers.
 
-## 🔧 How to Use
+---
+
+## 🖼️ Topology
+The topology includes multiple routers:
+- **Internal Routers** running OSPF and RIP.  
+- **ABR/ASBR** for redistribution.  
+- **Stub and NSSA area routers.**  
+- **ISP Router** with default route advertised.
+
+*(Add topology screenshot here if available, e.g. `topology.png`)*
+
+---
+
+## ⚙️ Requirements
+- **GNS3 v2.2+**
+- **Cisco IOS image (c7200 recommended)** → *not included in this repo*  
+- PC/Laptop with at least 8 GB RAM recommended
+
+---
+
+## 🚀 How to Run
 1. Clone this repository:
    ```bash
-   git clone https://github.com/USERNAME/REPO-NAME.git
-
+   git clone https://github.com/<your-username>/ospf-rip-redistribution-lab.git
